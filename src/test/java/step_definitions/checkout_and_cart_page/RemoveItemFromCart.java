@@ -12,7 +12,7 @@ public class RemoveItemFromCart {
 
     @When("User remove all item in cart")
     public void removeAllItemFromCart() {
-        for(int i = 0; i < Integer.parseInt(checkoutAndCartPage.getBadgeTextCart()); i++) {
+       for(int i = 0; i < Integer.parseInt(checkoutAndCartPage.getBadgeTextCart()); i++) {
             checkoutAndCartPage.clickRemoveItem();
         }
     }
